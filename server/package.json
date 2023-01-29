@@ -1,0 +1,21 @@
+{
+  "name": "hi-graphql-server",
+  "version": "1.0.0",
+  "description": "hi graphql server",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/server.js"
+  },
+  "author": "jingyi.zhu@intel.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.3.2",
+    "graphql": "^16.6.0"
+  }
+}

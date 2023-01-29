@@ -1,0 +1,15 @@
+# IDEs
+*.sublime-project
+*.sublime-workspace
+.idea
+*.iml
+.vscode
+*.swp
+*.swo
+
+# Deps
+node_modules
+
+# Auto generated
+dist
+build
