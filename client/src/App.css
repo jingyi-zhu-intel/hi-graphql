@@ -49,3 +49,15 @@
   color: white;
   display: flex;
 }
+
+.App .about {
+  max-width: 100%;
+  background-color: #262626;
+  padding: 4rem;
+  color: white;
+  text-align: left;
+}
+
+.App .block .hi-block-text {
+  color: white;
+}

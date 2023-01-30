@@ -1,4 +1,4 @@
-import { Header, HeaderItem } from "@spark-design/react";
+import { Header, HeaderItem, ToggleSwitch, Icon } from "@spark-design/react";
 import { HiHyperlink as Hyperlink } from "./Hyperlink";
 
 export const HiHeader = () => {
@@ -25,6 +25,13 @@ export const HiHeader = () => {
       <HeaderItem>
         <p>&nbsp;&nbsp;Page A&nbsp;&nbsp;</p>
       </HeaderItem>
+      <div style={{ position: "absolute", right: "2rem", top: "2rem" }}>
+        <HeaderItem>
+          <ToggleSwitch size="l">
+            <Icon icon="sun" style={{ color: "white" }} />
+          </ToggleSwitch>
+        </HeaderItem>
+      </div>
     </Header>
   );
 };

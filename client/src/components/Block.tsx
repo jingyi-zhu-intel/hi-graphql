@@ -1,10 +1,18 @@
-import { ButtonGroup, Button, Icon } from "@spark-design/react";
-import { Hyperlink } from "@spark-design/react";
+import {
+  ButtonGroup,
+  Button,
+  Icon,
+  Heading,
+  Hyperlink,
+} from "@spark-design/react";
 
 export const HiBlock = () => {
   return (
     <div className="block">
-      <div style={{ width: "80%" }}>
+      <div style={{ width: "80%", textAlign: "left" }}>
+        <Heading semanticLevel={3} size="xl">
+          <Icon artworkStyle="solid" icon="cpu" /> Processors
+        </Heading>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
           bibendum tincidunt laoreet. Aenean eget auctor felis, eget
@@ -23,23 +31,30 @@ export const HiBlock = () => {
         <Button
           variant="primary"
           endSlot={<Icon icon="play" />}
-          style={{ color: "white" }}
+          style={{ color: "white", width: "100%" }}
         >
           Go to Application
         </Button>
         <Button
           variant="primary"
           endSlot={<Icon icon="play" />}
-          style={{ color: "white" }}
+          style={{ color: "white", width: "100%" }}
         >
           Go to Cluster
         </Button>
         <Button
           variant="primary"
           endSlot={<Icon icon="play" />}
-          style={{ color: "white" }}
+          style={{ color: "white", width: "100%" }}
         >
           Go to Infrastructure
+        </Button>
+        <Button
+          variant="primary"
+          endSlot={<Icon icon="play" />}
+          style={{ color: "white", width: "100%" }}
+        >
+          Go to ..........
         </Button>
       </ButtonGroup>
     </div>

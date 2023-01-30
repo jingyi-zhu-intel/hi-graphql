@@ -5,6 +5,9 @@ import { HiHeader as Header } from "./components/Header";
 import { HiTable as Table } from "./components/Table";
 import { HiCard as Card } from "./components/Card";
 import { HiBlock as Block } from "./components/Block";
+import { HiForm as Form } from "./components/Form";
+import { HiAbout as About } from "./components/About";
+import { HiTabs as Tabs } from "./components/Tabs";
 // import { HiBreadcrumb as Breadcrumb } from "./components/Breadcrumb";
 
 const GET_APPLICATIONS = gql`
@@ -52,8 +55,10 @@ function App() {
       <Header />
       <DisplayApplications />
       <Block />
-      <br />
       <Table />
+      <Form />
+      <Tabs />
+      <About />
     </div>
   );
 }
