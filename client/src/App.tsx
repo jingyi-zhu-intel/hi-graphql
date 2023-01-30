@@ -9,6 +9,7 @@ import { HiForm as Form } from "./components/Form";
 import { HiAbout as About } from "./components/About";
 import { HiTabs as Tabs } from "./components/Tabs";
 // import { HiBreadcrumb as Breadcrumb } from "./components/Breadcrumb";
+import { useGetApplicationsQuery } from "./store/services";
 
 const GET_APPLICATIONS = gql`
   query GetApplications {
@@ -23,9 +24,12 @@ const GET_APPLICATIONS = gql`
 
 function DisplayApplications() {
   const { loading, error, data } = useQuery(GET_APPLICATIONS);
+  const { data: applications } = useGetApplicationsQuery(null);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
+
+  console.log(applications);
 
   type Application = {
     id: string;
