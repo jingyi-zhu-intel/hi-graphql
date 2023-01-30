@@ -1,4 +1,5 @@
-import { Header } from "@spark-design/react";
+import { Header, HeaderItem } from "@spark-design/react";
+import { HiHyperlink as Hyperlink } from "./Hyperlink";
 
 export const HiHeader = () => {
   return (
@@ -17,6 +18,13 @@ export const HiHeader = () => {
         </svg>
       }
       title="Hi GraphQL"
-    ></Header>
+    >
+      <HeaderItem>
+        <Hyperlink text="Link A" />
+      </HeaderItem>
+      <HeaderItem>
+        <p>&nbsp;&nbsp;Page A&nbsp;&nbsp;</p>
+      </HeaderItem>
+    </Header>
   );
 };

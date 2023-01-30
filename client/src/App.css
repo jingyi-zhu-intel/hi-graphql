@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.App .spark-table {
+  width: 100%;
+}
+
+.App .block {
+  max-width: 100%;
+  background-color: #0054AE;
+  text-align: center;
+  padding: 4rem;
+  color: white;
+  display: flex;
+}

@@ -21,13 +21,13 @@ export const applications = [
     id: "soP9XZOCSaLdQX",
     version: "1.0",
     name: "smart-edge",
-    description: "smart edge"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum tincidunt laoreet. Aenean eget auctor felis, eget pellentesque nibh. Etiam dui dolor, feugiat sed tempus eget, vehicula vel mi."
   },
   {
     id: "yXW0qBRAFuMA",
     version: "0.1",
     name: "ledge-park",
-    description: "ledge park"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum tincidunt laoreet. Aenean eget auctor felis, eget pellentesque nibh. Etiam dui dolor, feugiat sed tempus eget, vehicula vel mi."
   }
 ]
 
