@@ -5,7 +5,6 @@ import {
   List,
   ListItem,
   Tooltip,
-  Button,
 } from "@spark-design/react";
 
 export const HiAbout = () => {
