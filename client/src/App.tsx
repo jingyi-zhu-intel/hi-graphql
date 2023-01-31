@@ -9,8 +9,9 @@ import { HiForm as Form } from "./components/Form";
 import { HiAbout as About } from "./components/About";
 import { HiTabs as Tabs } from "./components/Tabs";
 import { HiCardHorizontal as CardHorizontal } from "./components/CardHorizontal";
-// import { HiBreadcrumb as Breadcrumb } from "./components/Breadcrumb";
+import { HiBreadcrumb as Breadcrumb } from "./components/Breadcrumb";
 import { useGetApplicationsQuery } from "./store/services";
+import { Shimmer } from "@spark-design/react";
 
 const GET_APPLICATIONS = gql`
   query GetApplications {
@@ -50,6 +51,7 @@ function DisplayApplications() {
           />
         </div>
       ))}
+      <Shimmer items={1} skeleton="card" />
     </div>
   );
 }
@@ -58,6 +60,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Breadcrumb />
       <CardHorizontal />
       <DisplayApplications />
       <Block />

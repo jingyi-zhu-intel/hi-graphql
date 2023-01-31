@@ -28,12 +28,6 @@ export const applications = [
     version: "0.1",
     name: "ledge-park",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum tincidunt laoreet. Aenean eget auctor felis, eget pellentesque nibh. Etiam dui dolor, feugiat sed tempus eget, vehicula vel mi."
-  },
-  {
-    id: "yXW0qBRsdgtrR",
-    version: "0.1",
-    name: "smart-robot",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum tincidunt laoreet. Aenean eget auctor felis, eget pellentesque nibh. Etiam dui dolor, feugiat sed tempus eget, vehicula vel mi."
   }
 ]
 

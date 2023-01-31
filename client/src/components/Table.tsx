@@ -14,6 +14,7 @@ export const HiTable = () => {
           accessor: "status",
           textAlign: "center",
         },
+        { Header: "Related issue", accessor: "issue", textAlign: "center" },
       ]}
       data={[
         {
@@ -32,6 +33,8 @@ export const HiTable = () => {
           name: "Card",
           status:
             "Card helper content missing, image/title/content/actions etc.",
+          issue:
+            "https://github.com/intel-innersource/libraries.ui.intel-design-system.spark-design/issues/759",
         },
         {
           name: "Checkbox",
@@ -44,6 +47,8 @@ export const HiTable = () => {
         {
           name: "Dropdown",
           status: "When click on dropdown box, will redirect to error page",
+          issue:
+            "https://github.com/intel-innersource/libraries.ui.intel-design-system.spark-design/issues/1210;https://github.com/intel-innersource/libraries.ui.intel-design-system.spark-design/issues/1082",
         },
         {
           name: "Grid",
@@ -53,6 +58,8 @@ export const HiTable = () => {
           name: "Header",
           status:
             "Nav link css incorrect/more than 2 items, and no gap between items, pure text not supported",
+          issue:
+            "https://github.com/intel-innersource/libraries.ui.intel-design-system.spark-design/issues/1418",
         },
         {
           name: "Heading",
@@ -80,16 +87,26 @@ export const HiTable = () => {
           status: "OK, but difficult to customize colors styles etc.",
         },
         {
+          name: "Shimmer",
+          status: "OK",
+        },
+        {
           name: "Tab",
           status: "Icon of tab not work",
+          issue:
+            "https://github.com/intel-innersource/libraries.ui.intel-design-system.spark-design/issues/988;https://github.com/intel-innersource/libraries.ui.intel-design-system.spark-design/issues/886",
         },
         {
           name: "Table",
           status: "Simple table OK, no sort/search etc.",
+          issue:
+            "https://github.com/intel-innersource/libraries.ui.intel-design-system.spark-design/issues/890;https://github.com/intel-innersource/libraries.ui.intel-design-system.spark-design/issues/832",
         },
         {
           name: "Tag",
-          status: "OK",
+          status: "simple tag ok",
+          issue:
+            "https://github.com/intel-innersource/libraries.ui.intel-design-system.spark-design/issues/833",
         },
         {
           name: "Text Field",

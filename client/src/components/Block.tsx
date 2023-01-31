@@ -27,7 +27,7 @@ export const HiBlock = () => {
           More information <Icon icon="arrow-right" />
         </Hyperlink>
       </div>
-      <ButtonGroup orientation="vertical">
+      <ButtonGroup orientation="vertical" spacing="l">
         <Button
           variant="primary"
           endSlot={<Icon icon="play" />}
@@ -50,9 +50,12 @@ export const HiBlock = () => {
           Go to Infrastructure
         </Button>
         <Button
-          variant="primary"
+          variant="alert"
           endSlot={<Icon icon="play" />}
           style={{ color: "white", width: "100%" }}
+          onPressChange={() => console.log("User pressing the button")}
+          onPressEnd={() => console.log("User press end")}
+          onPressStart={() => console.log("User press start")}
         >
           Go to ..........
         </Button>
