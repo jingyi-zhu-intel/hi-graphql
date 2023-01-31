@@ -5,6 +5,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.5",
     "@reduxjs/toolkit": "^1.9.2",
+    "@spark-design/css": "^1.1.2-alpha.0",
     "@spark-design/fonts": "^1.1.1-alpha.0",
     "@spark-design/react": "^1.1.2-alpha.0",
     "@testing-library/jest-dom": "^5.16.5",
