@@ -12,6 +12,7 @@ import { HiCardHorizontal as CardHorizontal } from "./components/CardHorizontal"
 import { HiBreadcrumb as Breadcrumb } from "./components/Breadcrumb";
 import { useGetApplicationsQuery } from "./store/services";
 import { Shimmer } from "@spark-design/react";
+import { Dropdown } from "./components/Dropdown";
 
 const GET_APPLICATIONS = gql`
   query GetApplications {
@@ -64,6 +65,18 @@ function App() {
       <CardHorizontal />
       <DisplayApplications />
       <Block />
+      <Dropdown
+        items={[
+          { name: "New component", value: "first" },
+          { name: "Bug fix", value: "second" },
+          { name: "More props needs to be exposed", value: "second" },
+          { name: "CSS issue", value: "second" },
+        ]}
+        onSelect={(value) => {
+          console.log("hello %s", value);
+        }}
+        name="TODO List"
+      />
       <Table />
       <Form />
       <Tabs />

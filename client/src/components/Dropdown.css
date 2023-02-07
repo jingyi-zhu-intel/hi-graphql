@@ -1,0 +1,22 @@
+/*
+ * SPDX-FileCopyrightText: (C) 2023 Intel Corporation
+ * SPDX-License-Identifier: LicenseRef-Intel
+ */
+
+ .dropdown {
+  position: relative;
+  width: auto;
+  display: inline-block;
+}
+
+.dropdown .spark-button:focus-visible {
+  outline: none;
+}
+
+.dropdown .dropdown__options {
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  width: auto;
+  left: 0;
+}
